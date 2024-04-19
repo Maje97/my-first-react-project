@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import TraditionalGreeting from "./components/Greetings";
+import ArrowGreeting from "./components/Greetings";
+import UserProfile from "./components/UserProfile";
+import CardContainer from './components/card';
+import Counter from './components/counter';
 
 function App() {
   return (
@@ -18,6 +23,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <TraditionalGreeting name="Alexandra" />
+      <ArrowGreeting name="Nessie" />
+      <UserProfile name="Nexus" age={12} location="Knivsta" />
+      <CardContainer>
+        <p>This is a child</p>
+      </CardContainer>
+      <Counter />
     </div>
   );
 }
